@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>网页</title>
+    <link href="../bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet"/>
+    <script src="../bootstrap-3.3.5-dist/js/jquery.min.js" rel="stylesheet"></script>
+    <script src="../bootstrap-3.3.5-dist/js/bootstrap.js" rel="stylesheet"></script>
+    <style>
+        .badge-danger {
+            background-color: #d9534f;
+        }
+        .login_form .form-control {
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar  navbar-inverse">
+    <div class="container">
+        <a class="navbar-brand" href="#">新安PHP培训 <span class="badge badge-danger">8</span></a>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <form class="form-inline login_form" style="padding-top:10px;float: right">
+            <input type="text" class="form-control input-sm " placeholder="Email">
+            <input type="password" class="form-control input-sm " placeholder="Password">
+            <input type="submit" value="login" class="btn btn-success btn-sm">
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target=".popupWin">regsiter</button>
+            <a href="homework8.11_2.html" data-toggle="modal" data-target=".popupWin">regsiter</a>
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-9">
+
+            <div class="jumbotron">
+                <h1>Hello, world!</h1>
+
+                <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some
+                    responsive-range viewport sizes to see it in action.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p>
+                        <a class="btn btn-success" href="#" role="button">View details »</a>
+                    </p>
+                </div>
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-success" href="#" role="button">View details »</a></p>
+                </div>
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                </div>
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                </div>
+
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                </div>
+
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">新安</a>
+                <a href="#" class="list-group-item list-group-item-danger">万家</a>
+                <a href="#" class="list-group-item list-group-item-warning">百度</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p>© 2016 Company, Inc.</p>
+
+</div>
+<div class="modal popupWin">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Please sign in</h4>
+            </div>
+            <div class="panel-body">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
+                    <button type="submit" class="btn btn-success">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

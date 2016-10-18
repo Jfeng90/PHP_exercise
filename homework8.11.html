@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>布局练习</title>
+    <style>
+        hr{
+            color: #808080;
+        }
+        .container1,.container2,.container3{
+            width: 900px;
+            margin: 0 auto;
+        }
+        .header1,.header2{
+            background: #66CCFF;
+            height: 90px;
+            margin-bottom: 8px;
+        }
+        .menu1{
+            background: #0099CC;
+            height: 30px;
+            margin-bottom: 8px
+        }
+        .main1{
+            background: #CCFFFF;
+            height: 400px;
+            margin-bottom: 8px
+        }
+        .footer1,.footer2{
+            background: #66CCFF;
+            height: 60px;
+            margin-bottom: 8px
+        }
+        .main2_left{
+            background: #CCFFFF;
+            height: 400px;
+            width: 695px;
+            margin-bottom: 8px;
+            float: left;
+        }
+        .main2_right{
+            background: #99FFFF;
+            height: 400px;
+            width: 200px;
+            margin-bottom: 8px;
+            margin-left: 5px;
+            float: right;
+        }
+        .nav{
+            clear: both;
+        }
+        .header3, .footer3 {
+            background: #99CC66;
+            margin-bottom: 8px
+        }
+
+        .header3 {
+            height: 90px;
+            margin-bottom: 8px;
+        }
+
+        .footer3 {
+            height: 60px;
+            width: 900px;
+
+        }
+
+        .menu3 {
+            background: #669933;
+            height: 30px;
+            margin-bottom: 8px;
+        }
+
+        .sidebar3 {
+            width:100%;
+            position:relative;
+            margin-bottom: 8px;
+        }
+
+        .sidebar3_left {
+            background: #CCFF99;
+            width:200px;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+
+        .sidebar3_right {
+            background: #FFFFBB;
+            margin:0 0 0 210px;
+        }
+    </style>
+</head>
+<body>
+<div class="container1">
+    <div class="header1">This is the header</div>
+    <div class="menu1">This is the meun</div>
+    <div class="main1">This is the main page</div>
+    <div class="footer1">This is the footer</div>
+</div>
+<hr>
+<div class="container2">
+    <div class="header2">This is the header</div>
+    <div class="main2">
+        <div class="main2_left">This is the main page</div>
+        <div class="main2_right">This is the sidebar</div>
+    </div>
+    <div class="nav"></div>
+    <div class="footer2">This is the footer</div>
+</div>
+<hr>
+<div class="container3">
+    <div class="header3">This is the header</div>
+    <div class="menu3">This is the meun</div>
+    <div class="sidebar3">
+        <div class="sidebar3_left">This is the left sidebar 高度自适应</div>
+        <div class="sidebar3_right">This is the right sidebar 宽度自适应宽</div>
+    </div>
+    <div class="nav"></div>
+    <div class="footer3">This is the footer</div>
+</div>
+</body>
+</html>
